@@ -20,6 +20,8 @@ var button = d3.select("#filter-btn");
 
 button.on("click", function() {
 
+    d3.event.preventDefault();
+
     var inputElement = d3.select("#datetime");
 
     var inputValue = inputElement.property("value");
@@ -30,7 +32,9 @@ button.on("click", function() {
 
     //console.log(filteredData);
 
-    d3.selectAll("tr").remove();
+    var tableBody = d3.selectAll("tbody");
+    var tableRow = tableBody.selectAll("tr").remove();
+
 
     filteredData.forEach(function(filterdates) {
         console.log(filterdates)
