@@ -1,6 +1,5 @@
 # JavaScript_DOM_Manipulation
 <br>
-
 ## Automatic Table and Date Search
 1. Create a Basic web page using (HTML, CSS, D3.js & Javascript)
 2. Using dataset provided (array of Javascript objects) write code that appends a table to webpage and adds new rows of data for each object
